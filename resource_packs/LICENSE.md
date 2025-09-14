@@ -1,5 +1,7 @@
 # The License of Addon
 
-Copyright (c) 2025 Wild Era Developer Team All Rights Reserved.
+Copyright (c) 2025 **Wild Era Developer Team**.
 
-Unauthorized copying, modification, distribution, or use of this software, in whole or in part, is strictly prohibited.
+All Rights Reserved.
+
+Unauthorized copying, modification, distribution, or use of this software, in whole or in part, is **strictly prohibited**.
