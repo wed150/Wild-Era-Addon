@@ -1,9 +1,0 @@
-{
-    "resource_pack_name": "Vanilla",
-    "texture_name": "atlas.items",
-    "texture_data": {
-        "we:dried_fish": {
-            "textures": "textures/items/foods/dried_fish"
-        }
-    }
-}
