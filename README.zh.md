@@ -1,4 +1,4 @@
-#荒野纪元 Addon
+# 荒野纪元 Addon
 基岩版Addon
 
 Copyright (c) 2025 Wild Era Developer Team.保留所有权。
