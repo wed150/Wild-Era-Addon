@@ -1,6 +1,6 @@
 # Wild Era Addon
-[![中文](https://img.shields.io/badge/简体中文-inactive?style=for-the-badge)](README.md)
-[![English](https://img.shields.io/badge/English-informational?style=for-the-badge)](README.En.md)
+[![English](https://img.shields.io/badge/English-inactive?style=for-the-badge)](README.En.md)
+[![中文](https://img.shields.io/badge/简体中文-informational?style=for-the-badge)](README.md)
 
 Bedrock Edition Addon
 
