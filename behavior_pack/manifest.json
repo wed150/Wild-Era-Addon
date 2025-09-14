@@ -8,29 +8,29 @@
   },
   "header": {
     "name": "蛮荒纪元demo",
-    "description": "此为蛮荒纪元的预览版",
+    "description": "此为蛮荒纪元的预览版", 
     "min_engine_version": [1, 21, 90],
     "uuid": "6498d2f6-4ff2-4db3-847a-3f2931ed53a1",
-    "version": "1.0.1"
+    "version": [1, 0, 2]
   },
   "capabilities": ["script_eval"],
   "modules": [
     {
       "type": "data",
       "uuid": "ec6aaa55-da0c-4353-9662-68e0b43e86cf",
-      "version": "1.0.1"
+      "version": [1, 0, 2]
     },
     {
       "type": "script",
       "uuid": "4d2ba385-f89b-4f06-a43f-b88a9fc8f399",
-      "version": "1.0.1",
+      "version": [1, 0, 2],
       "entry": "scripts/main.js"
     }
   ],
   "dependencies": [
     {
       "uuid": "b366db34-a899-4253-9dcb-fe63db5ce385",
-      "version": "1.0.1"
+      "version": [1, 0, 2]
     }
   ]
 }
