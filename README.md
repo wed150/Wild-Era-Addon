@@ -1,4 +1,8 @@
+
 # 荒野纪元 Addon
+[![中文](https://img.shields.io/badge/简体中文-inactive?style=for-the-badge)](README.md)
+[![English](https://img.shields.io/badge/English-informational?style=for-the-badge)](README.En.md)
+
 基岩版Addon
 
 ## 下载方法
