@@ -16,6 +16,6 @@
 打开本仓库的Release,找到对应版本下载
 或者使用XXXXXXX
 ```
-Copyright (c) 2025 Wild Era Developer Team.保留所有权。
+Copyright (c) 2025 **Wild Era Developer Team**.保留所有权。
 
-未经事先许可，严禁复制、修改、分发、或使用附加包的任何一部分
+未经事先许可，**严禁**复制、修改、分发、或使用附加包的任何一部分
