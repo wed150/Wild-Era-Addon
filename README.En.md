@@ -16,7 +16,9 @@ Go to the Release section of this repository, find the corresponding version to 
 or use XXXXXXXX
 ```
 
-Copyright (c) 2025 Wild Era Developer Team All Rights Reserved.
+Copyright (c) 2025 **Wild Era Developer Team**.
 
-Unauthorized copying, modification, distribution, or use of this addon, in whole or in part, is strictly prohibited.
+All Rights Reserved.
+
+Unauthorized copying, modification, distribution, or use of this addon, in whole or in part, is **strictly prohibited**.
 
