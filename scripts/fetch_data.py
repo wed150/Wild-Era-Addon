@@ -95,8 +95,8 @@ if __name__ == "__main__":
 
 > 数据每6小时自动更新一次
 """
-        pattern = r'https://img.shields.io/badge/a-b?style=for-the-badge&label=.*?&labelColor=%239469e3&color=%23B291F0'
-        replacement = f'https://img.shields.io/badge/a-b?style=for-the-badge&label={error_content}&labelColor=%239469e3&color=%23B291F0'
+        pattern = r'https://img.shields.io/badge/a-.*?-c?style=for-the-badge&label=a&labelColor=%239469e3&color=%23B291F0'
+        replacement = f'https://img.shields.io/badge/a-{data_content}-c?style=for-the-badge&label=a&labelColor=%239469e3&color=%23B291F0'
         updated_content = re.sub(pattern, replacement, content, flags=re.DOTALL)
 
         with open('README.md', 'w', encoding='utf-8') as f:
