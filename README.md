@@ -4,7 +4,7 @@
 [![中文](https://img.shields.io/badge/简体中文-inactive?style=for-the-badge&color=%235d8aa8)](README.md)
 [![English](https://img.shields.io/badge/English-informational?style=for-the-badge)](README.En.md)
 
-[![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/wed150/Wild-Era-Addon/total?style=for-the-badge&labelColor=%23007ec6&label=下载&color=%234b9cd3)](https://github.com/wed150/Wild-Era-Addon/releases)
+[![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/wed150/Wild-Era-Addon/total?style=for-the-badge&labelColor=%23007ec6&label=下载&color=%234b9cd3)](https://github.com/wed150/Wild-Era-Addon/releases)[![GitHub forks](https://img.shields.io/github/forks/wed150/Wild-Era-Addon?style=for-the-badge&labelColor=%23007ec6&color=%234b9cd3)]
 
 
 基岩版Addon
