@@ -54,35 +54,10 @@ def update_readme(data):
     date_str = time.strftime("%Y-%m-%d %H:%M:%S UTC", time.gmtime(timestamp))
 
     # 格式化数据
-    if data.get("ec") == 0:  # 假设成功响应ec为0
-        data_content = f"""
-## 📊 API 响应数据 (更新于: {date_str})
-
-| 字段 | 值 |
-|------|-----|
-| 错误码 (ec) | `{data.get('ec', 'N/A')}` |
-| 错误信息 (em) | `{data.get('em', 'N/A')}` |
-| 数据 | ```json\n{json.dumps(data.get('data', {}), indent=2, ensure_ascii=False)}\n``` |
-
-**请求详情:**
-- 时间戳: `{int(time.time())}`
-- 用户ID: `6d32b18e90fe11eea60b5254001e7c00`
-- 参数: `{{"page":1}}`
-
-> 数据每6小时自动更新一次
-"""
+    if data.get("ec") == 200:  # 假设成功响应ec为0
+        data_content = f"""{data.get('data', {}).get('total_count',0)}"""
     else:
-        data_content = f"""
-## ❌ API 请求失败 (更新于: {date_str})
-
-| 字段 | 值 |
-|------|-----|
-| 错误码 (ec) | `{data.get('ec', 'N/A')}` |
-| 错误信息 (em) | `{data.get('em', 'N/A')}` |
-| 详细说明 | `{data.get('data', {}).get('explain', 'N/A')}` |
-
-> 数据每6小时自动更新一次
-"""
+        data_content = f"""无数据"""
 
     # 替换README中的特定部分
     pattern = r'<!-- START_API_DATA -->.*?<!-- END_API_DATA -->'
