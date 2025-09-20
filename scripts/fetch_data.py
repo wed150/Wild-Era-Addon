@@ -16,7 +16,7 @@ def fetch_api_data():
     print(f"当前时间戳: {current_ts}")
     
     # API 配置
-    api_url = "https://afdian.com/api/open/ping"
+    api_url = "https://afdian.com/api/open/query-order"
     user_id = "6d32b18e90fe11eea60b5254001e7c00"
     params_str = '{"page":1}'  # 字符串形式的 JSON
     
