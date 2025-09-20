@@ -1,5 +1,7 @@
 # Wild Era Addon
-[![English](https://img.shields.io/badge/English-inactive?style=for-the-badge)](README.En.md)
+[![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/wed150/Wild-Era-Addon/total?style=for-the-badge&labelColor=%23007ec6&color=%2387cefa)](https://github.com/wed150/Wild-Era-Addon/releases)
+
+[![English](https://img.shields.io/badge/English-inactive?style=for-the-badge&color=%2387cefa)](README.En.md)
 [![中文](https://img.shields.io/badge/简体中文-informational?style=for-the-badge)](README.md)
 
 Bedrock Edition Addon
