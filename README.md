@@ -4,7 +4,7 @@
 [![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/wed150/Wild-Era-Addon/total?style=for-the-badge&labelColor=%23007ec6&color=%2387cefa)](https://github.com/wed150/Wild-Era-Addon/releases)
 
 
-[![中文](https://img.shields.io/badge/简体中文-inactive?style=for-the-badge)](README.md)
+[![中文](https://img.shields.io/badge/简体中文-inactive?style=for-the-badge&color=%2387cefa)](README.md)
 [![English](https://img.shields.io/badge/English-informational?style=for-the-badge)](README.En.md)
 
 基岩版Addon
