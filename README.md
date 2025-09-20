@@ -4,7 +4,7 @@
 [![中文](https://img.shields.io/badge/简体中文-inactive?style=for-the-badge&color=%235d8aa8)](README.md)
 [![English](https://img.shields.io/badge/English-informational?style=for-the-badge)](README.En.md)
 
-[![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/wed150/Wild-Era-Addon/total?style=for-the-badge&labelColor=%23007ec6&label=下载&color=%234b9cd3)](https://github.com/wed150/Wild-Era-Addon/releases) ![GitHub forks](https://img.shields.io/github/forks/wed150/Wild-Era-Addon?style=for-the-badge&labelColor=%23007ec6&color=%234b9cd3) ![GitHub Release](https://img.shields.io/github/v/release/wed150/Wild-Era-Addon?include_prereleases&display_name=release&style=for-the-badge&labelColor=%23007ec6&color=%234b9cd3&link=https%3A%2F%2Fgithub.com%2Fwed150%2FWild-Era-Addon%2Freleases&label=最新版本)
+[![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/wed150/Wild-Era-Addon/total?style=for-the-badge&labelColor=%23007ec6&label=下载&color=%234b9cd3)](https://github.com/wed150/Wild-Era-Addon/releases) ![GitHub forks](https://img.shields.io/github/forks/wed150/Wild-Era-Addon?style=for-the-badge&labelColor=%23007ec6&color=%234b9cd3) [![GitHub Release](https://img.shields.io/github/v/release/wed150/Wild-Era-Addon?include_prereleases&display_name=release&style=for-the-badge&labelColor=%23007ec6&color=%234b9cd3&label=最新版本)](https://github.com/wed150/Wild-Era-Addon/releases)
 
 
 
