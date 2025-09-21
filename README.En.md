@@ -20,6 +20,10 @@ Go to the Release section of this repository, find the corresponding version to 
 or use XXXXXXXX
 ```
 
+## Support Us
+
+[![Static Badge](https://img.shields.io/badge/Afdian-%239469e3?style=for-the-badge)](https://afdian.com/a/Minecraft-Mobius)
+
 Copyright (c) 2025 **Wild Era Developer Team**.
 
 All Rights Reserved.
