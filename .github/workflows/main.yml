@@ -15,9 +15,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.TOKEN }}
-          persist-credentials: false
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -34,8 +31,8 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          git config user.name "wed150"
-          git config user.email "wed15058338634@outlook.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           git add README.md README.En.md
           git commit -m "Update API data in README" || echo "No changes to commit"
           git push
