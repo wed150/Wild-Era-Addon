@@ -2,7 +2,7 @@ name: Update README with API Data
 
 on:
   schedule:
-    - cron: '0/6 * * * *'  # 每运行一次
+    - cron: '0/6 * * * *'  # 每6运行一次
   workflow_dispatch:       # 允许手动触发
   push:
     branches: [ main ]
@@ -13,6 +13,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -24,11 +26,13 @@ jobs:
 
       - name: Run Python script to fetch data
         run: python ./.github/workflows/fetch_data.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
 
       - name: Commit and push changes
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add README.md
+          git add README.md README.En.md
           git commit -m "Update API data in README" || echo "No changes to commit"
           git push

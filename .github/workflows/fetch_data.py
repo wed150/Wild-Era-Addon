@@ -1,3 +1,5 @@
+import os
+
 import requests
 import time
 import hashlib
@@ -8,7 +10,10 @@ import subprocess
 def calculate_signature(params, ts, user_id):
     """计算签名：将 params、ts、user_id 的值拼接后计算 MD5"""
     # 注意：params 已经是字符串形式的 JSON
-    sign_str = f"wJxaspn8Arv4HRkjVd7eSU5gfGYumhyqparams{params}ts{ts}user_id6d32b18e90fe11eea60b5254001e7c00"
+    secret_key = os.environ.get('TOKEN', 'o')
+    if secret_key =="o":
+        raise Exception("TOKEN 未设置")
+    sign_str = f"{secret_key}params{params}ts{ts}user_id{user_id}"
     return hashlib.md5(sign_str.encode()).hexdigest()
 
 def fetch_api_data():
@@ -79,20 +84,6 @@ def update_readme(data):
     except FileNotFoundError:
         print("README.En.md 文件未找到")
 
-def commit_and_push():
-    try:
-        # 添加文件到暂存区
-        subprocess.run(['git', 'add', 'README.md', 'README.En.md'], check=True)
-        
-        # 提交更改
-        subprocess.run(['git', 'commit', '-m', 'Update API data in README'], check=True)
-        
-        # 推送到远程仓库
-        subprocess.run(['git', 'push', 'origin', 'main'], check=True)
-        
-        print("成功提交并推送更改")
-    except subprocess.CalledProcessError as e:
-        print(f"Git操作失败: {e}")
 
 if __name__ == "__main__":
     try:
@@ -100,7 +91,7 @@ if __name__ == "__main__":
         data = fetch_api_data()
         print("API响应:", json.dumps(data, indent=2, ensure_ascii=False))
         update_readme(data)
-        commit_and_push()
+
         print("README更新成功")
     except Exception as e:
         print(f"错误: {e}")
