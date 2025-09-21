@@ -78,7 +78,7 @@ def update_readme(data_content):
 
 if __name__ == "__main__":
     try:
-        secret_key = os.environ.get("TOKEN", 'o')
+        secret_key =json.loads( os.environ.get("TOKEN", 'o'))
 
         if secret_key =="o":
             raise Exception("TOKEN 未设置")
