@@ -21,6 +21,9 @@
 打开本仓库的Release,找到对应版本下载
 或者使用XXXXXXX
 ```
+##支持我们
+点击[![Static Badge](https://img.shields.io/badge/%E7%88%B1%E5%8F%91%E7%94%B5-%239469e3?style=for-the-badge)](https://afdian.com/a/Minecraft-Mobius)支持我们
+
 Copyright (c) 2025 **Wild Era Developer Team**.保留所有权。
 
 未经事先许可，**严禁**复制、修改、分发、或使用附加包的任何一部分
