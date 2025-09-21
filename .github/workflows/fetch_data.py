@@ -49,7 +49,7 @@ def fetch_api_data(user_id,token):
     try:
         return response.json()
     except json.JSONDecodeError as e:
-        raise Exception(f"JSON解析失败: {e}，响应内容: {response.text}")
+        raise Exception(f"JSON解析失败，响应内容")
 
 def process_data(data):
     """处理从API获取的数据，提取用于徽章显示的内容"""
@@ -71,6 +71,14 @@ def update_readme_file(file_path, pattern, replacement):
             f.write(updated_content)
     except FileNotFoundError:
         print(f"{file_path} 文件未找到")
+
+def mask_user_id(user_id):
+    """将user_id中间8位字符替换为********"""
+    if not user_id or len(user_id) <= 16:
+        return user_id
+    # 将中间8位替换为********
+    masked_id = user_id[:8] + "********" + user_id[16:]
+    return masked_id
 
 def update_readme(data_content):
     """更新README文件中的徽章数据"""
@@ -109,16 +117,19 @@ if __name__ == "__main__":
                 token = user_info.get("token")
                 if user_id and token:  # 确保user_id和token都存在
                     try:
+                        masked_user_id = mask_user_id(user_id)
                         data = fetch_api_data(user_id, token)
                         processed_data = process_data(data)
                         data_content += processed_data
-                        print(f"用户 {user_id} 数据处理完成，贡献数: {processed_data}")
+                        print(f"用户 {masked_user_id} 数据处理完成，贡献数: {processed_data}")
                     except Exception as e:
-                        print(f"处理用户 {user_id} 数据时出错: {e}")
+                    # 对user_id进行掩码处理
+                        masked_user_id = mask_user_id(user_id) if user_id else "未知用户"
+                        print(f"处理用户 {masked_user_id} 数据时出错: {e}")
                 else:
-                    print(f"用户信息不完整: {user_info}")
+                    print(f"用户信息不完整")
             else:
-                print(f"用户信息格式错误: {user_info}")
+                print(f"用户信息格式错误")
 
         # 更新README文件
         update_readme(str(data_content))
