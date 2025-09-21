@@ -37,15 +37,24 @@ def fetch_api_data(user_id,token):
 
     response = requests.post(api_url, headers=headers, data=json.dumps(payload), timeout=10)
 
-    if response.status_code == 200:
+    # 检查HTTP响应状态码
+    if response.status_code != 200:
+        raise Exception(f"API请求失败，状态码: {response.status_code}，响应内容: {response.text}")
+
+    # 检查响应内容是否为空
+    if not response.text:
+        raise Exception("API返回空响应")
+
+    # 尝试解析JSON
+    try:
         return response.json()
-    else:
-        raise Exception(f"API请求失败")
+    except json.JSONDecodeError as e:
+        raise Exception(f"JSON解析失败: {e}，响应内容: {response.text}")
 
 def process_data(data):
     """处理从API获取的数据，提取用于徽章显示的内容"""
-    data_content = "无数据"
-    if data.get("ec") == 200:
+    data_content = 0
+    if data and isinstance(data, dict) and data.get("ec") == 200:
         total_count = data.get('data', {}).get('total_count', 0)
         data_content = int(total_count)
     return data_content
@@ -75,23 +84,44 @@ def update_readme(data_content):
     replacement = f'https://img.shields.io/badge/a-{data_content}-c?style=for-the-badge&label=Afdian&labelColor=%239469e3&color=%23B291F0'
     update_readme_file('README.En.md', pattern, replacement)
 
-
 if __name__ == "__main__":
     try:
-        secret_key =json.loads( os.environ.get("TOKEN", 'o'))
+        # 从环境变量获取用户信息
+        secret_key_str = os.environ.get("TOKEN", 'o')
 
-        if secret_key =="o":
-            raise Exception("TOKEN 未设置")
-        data_content=0
-        for i in secret_key:
-            data = fetch_api_data(i["user_id"],i["token"])
-            data_content += process_data(data)
+        if secret_key_str == 'o':
+            raise Exception("未设置TOKEN环境变量")
 
+        # 解析JSON格式的用户信息
+        try:
+            user_info_list = json.loads(secret_key_str)
+        except json.JSONDecodeError as e:
+            raise Exception(f"TOKEN环境变量不是有效的JSON格式: {e}")
 
-        # 分离数据处理和文件更新
+        if not isinstance(user_info_list, list):
+            raise Exception("TOKEN环境变量应为JSON数组格式")
 
+        data_content = 0
+        # 遍历所有用户信息并累加数据
+        for user_info in user_info_list:
+            if isinstance(user_info, dict):  # 确保user_info是字典类型
+                user_id = user_info.get("user_id")
+                token = user_info.get("token")
+                if user_id and token:  # 确保user_id和token都存在
+                    try:
+                        data = fetch_api_data(user_id, token)
+                        processed_data = process_data(data)
+                        data_content += processed_data
+                        print(f"用户 {user_id} 数据处理完成，贡献数: {processed_data}")
+                    except Exception as e:
+                        print(f"处理用户 {user_id} 数据时出错: {e}")
+                else:
+                    print(f"用户信息不完整: {user_info}")
+            else:
+                print(f"用户信息格式错误: {user_info}")
+
+        # 更新README文件
         update_readme(str(data_content))
+        print(f"成功更新README文件，总计数: {data_content}")
     except Exception as e:
-        print(f"错误"+str(e))
-
-
+        print(f"程序执行出错: {e}")
