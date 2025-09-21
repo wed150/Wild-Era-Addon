@@ -92,6 +92,6 @@ if __name__ == "__main__":
 
         update_readme(str(data_content))
     except Exception as e:
-        print(f"错误"+e)
+        print(f"错误"+str(e))
 
 
