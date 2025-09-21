@@ -24,9 +24,7 @@ or use XXXXXXXX
 
 [![Static Badge](https://img.shields.io/badge/wed15-%239469e3?style=for-the-badge)](https://afdian.com/a/Minecraft-Mobius) [![Static Badge](https://img.shields.io/badge/luning39-%239469e3?style=for-the-badge)](https://afdian.com/a/luning39) [![Static Badge](https://img.shields.io/badge/Multidomain-%239469e3?style=for-the-badge)](https://afdian.com/a/Multidomain)
 
-Copyright (c) 2025 **Wild Era Developer Team**.
-
-All Rights Reserved.
-
-Unauthorized copying, modification, distribution, or use of this addon, in whole or in part, is **strictly prohibited**.
+>[!WARNING]
+>Copyright (c) 2025 **Wild Era Developer Team**.
+>All Rights Reserved.</br>Unauthorized copying, modification, distribution, or use of this addon, in whole or in part, is **strictly prohibited**.
 
