@@ -62,8 +62,8 @@ def update_readme(data):
     # 替换README中的特定部分
     "https://img.shields.io/badge/a-替换内容-c?style=for-the-badge&label=a&labelColor=%239469e3&color=%23B291F0"
 # 替换README中的特定部分
-    pattern = r'https://img\.shields\.io/badge/a-.*?-c\?style=for-the-badge&label=a&labelColor=%239469e3&color=%23B291F0'
-    replacement = f'https://img.shields.io/badge/a-{data_content}-c?style=for-the-badge&label=a&labelColor=%239469e3&color=%23B291F0'
+    pattern = r'https://img\.shields\.io/badge/a-.*?-c\?style=for-the-badge&label=爱发电&labelColor=%239469e3&color=%23B291F0'
+    replacement = f'https://img.shields.io/badge/a-{data_content}-c?style=for-the-badge&label=爱发电&labelColor=%239469e3&color=%23B291F0'
     updated_content = re.sub(pattern, replacement, content, flags=re.DOTALL)
 
     # 写回README.md
@@ -86,8 +86,8 @@ if __name__ == "__main__":
         timestamp = int(time.time())
         date_str = time.strftime("%Y-%m-%d %H:%M:%S UTC", time.gmtime(timestamp))
         error_content = f"""无数据"""
-        pattern = r'<!-- START_API_DATA -->.*?<!-- END_API_DATA -->'
-        replacement = f'<!-- START_API_DATA -->{error_content}<!-- END_API_DATA -->'
+        pattern = r'https://img\.shields\.io/badge/a-.*?-c\?style=for-the-badge&label=爱发电&labelColor=%239469e3&color=%23B291F0'
+        replacement = f'https://img.shields.io/badge/a-{data_content}-c?style=for-the-badge&label=爱发电&labelColor=%239469e3&color=%23B291F0'
         updated_content = re.sub(pattern, replacement, content, flags=re.DOTALL)
 
         with open('README.md', 'w', encoding='utf-8') as f:
