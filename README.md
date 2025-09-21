@@ -25,6 +25,6 @@
 
 [![Static Badge](https://img.shields.io/badge/wed15-%239469e3?style=for-the-badge)](https://afdian.com/a/Minecraft-Mobius) [![Static Badge](https://img.shields.io/badge/luning39-%239469e3?style=for-the-badge)](https://afdian.com/a/luning39) [![Static Badge](https://img.shields.io/badge/Multidomain-%239469e3?style=for-the-badge)](https://afdian.com/a/Multidomain)
 
-Copyright (c) 2025 **Wild Era Developer Team**.保留所有权。
-
+>[!WARNING]
+>Copyright (c) 2025 **Wild Era Developer Team**.保留所有权。</br>
 未经事先许可，**严禁**复制、修改、分发、或使用附加包的任何一部分
