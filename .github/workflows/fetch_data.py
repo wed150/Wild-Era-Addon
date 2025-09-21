@@ -62,12 +62,20 @@ def update_readme(data):
     # 替换README中的特定部分
     "https://img.shields.io/badge/a-替换内容-c?style=for-the-badge&label=a&labelColor=%239469e3&color=%23B291F0"
 # 替换README中的特定部分
-    pattern = r'https://img\.shields\.io/badge/a-.*?-c\?style=for-the-badge&label=爱发电&labelColor=%239469e3&color=%23B291F0'
-    replacement = f'https://img.shields.io/badge/a-{data_content}-c?style=for-the-badge&label=爱发电&labelColor=%239469e3&color=%23B291F0'
+    pattern = r'https://img\.shields\.io/badge/a-.*?-c\?style=for-the-badge&label=a&labelColor=%239469e3&color=%23B291F0'
+    replacement = f'https://img.shields.io/badge/a-{data_content}-c?style=for-the-badge&label=a&labelColor=%239469e3&color=%23B291F0'
     updated_content = re.sub(pattern, replacement, content, flags=re.DOTALL)
 
     # 写回README.md
     with open('README.md', 'w', encoding='utf-8') as f:
+        f.write(updated_content)
+    # 对README.En.md执行相同内容 替换 https://img.shields.io/badge/a-替换内容-c?style=for-the-badge&label=Afdian&labelColor=%239469e3&color=%23B291F0
+    pattern = r'https://img\.shields\.io/badge/a-.*?-c\?style=for-the-badge&label=Afdian&labelColor=%239469e3&color=%23B291F0'
+    replacement = f'https://img.shields.io/badge/a-{data_content}-c?style=for-the-badge&label=Afdian&labelColor=%239469e3&color=%23B291F0'
+    with open('README.En.md', 'r', encoding='utf-8') as f:
+        content = f.read()
+    updated_content = re.sub(pattern, replacement, content, flags=re.DOTALL)
+    with open('README.En.md', 'w', encoding='utf-8') as f:
         f.write(updated_content)
 
 if __name__ == "__main__":
@@ -85,9 +93,20 @@ if __name__ == "__main__":
 
         timestamp = int(time.time())
         date_str = time.strftime("%Y-%m-%d %H:%M:%S UTC", time.gmtime(timestamp))
-        error_content = f"""无数据"""
-        pattern = r'https://img\.shields\.io/badge/a-.*?-c\?style=for-the-badge&label=爱发电&labelColor=%239469e3&color=%23B291F0'
-        replacement = f'https://img.shields.io/badge/a-{data_content}-c?style=for-the-badge&label=爱发电&labelColor=%239469e3&color=%23B291F0'
+        error_content = f"""
+## ❌ API 请求错误 (更新于: {date_str})
+
+错误信息: `{str(e)}`
+
+**请求参数:**
+- 时间戳: `{int(time.time())}`
+- 用户ID: `6d32b18e90fe11eea60b5254001e7c00`
+- 参数: `{{"page":1}}`
+
+> 数据每6小时自动更新一次
+"""
+        pattern = r'<!-- START_API_DATA -->.*?<!-- END_API_DATA -->'
+        replacement = f'<!-- START_API_DATA -->{error_content}<!-- END_API_DATA -->'
         updated_content = re.sub(pattern, replacement, content, flags=re.DOTALL)
 
         with open('README.md', 'w', encoding='utf-8') as f:
