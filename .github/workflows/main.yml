@@ -29,7 +29,7 @@ jobs:
       - name: Run Python script to fetch data
         run: python ./.github/workflows/fetch_data.py
         env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          TOKEN: ${{ secrets.TOKEN }}
 
       - name: Commit and push changes
         run: |
