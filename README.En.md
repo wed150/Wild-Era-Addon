@@ -20,6 +20,10 @@ Go to the Release section of this repository, find the corresponding version to 
 or use XXXXXXXX
 ```
 
+## Support Us (Afdian)
+
+[![Static Badge](https://img.shields.io/badge/wed15-%239469e3?style=for-the-badge)](https://afdian.com/a/Minecraft-Mobius) [![Static Badge](https://img.shields.io/badge/luning39-%239469e3?style=for-the-badge)](https://afdian.com/a/luning39) [![Static Badge](https://img.shields.io/badge/Multidomain-%239469e3?style=for-the-badge)](https://afdian.com/a/Multidomain) [![Static Badge](https://img.shields.io/badge/Maschinenpistole40-%239469e3?style=for-the-badge)](https://afdian.com/a/deutsche)
+
 ## Sponsor Ranking
 
    <!-- RANKING_TABLE_START -->
@@ -30,11 +34,6 @@ or use XXXXXXXX
 | 3 | 6772732898 | 10 |
 | 4 | 殇雪 | 7 |
 <!-- RANKING_TABLE_END -->
-
-
-## Support Us (Afdian)
-
-[![Static Badge](https://img.shields.io/badge/wed15-%239469e3?style=for-the-badge)](https://afdian.com/a/Minecraft-Mobius) [![Static Badge](https://img.shields.io/badge/luning39-%239469e3?style=for-the-badge)](https://afdian.com/a/luning39) [![Static Badge](https://img.shields.io/badge/Multidomain-%239469e3?style=for-the-badge)](https://afdian.com/a/Multidomain) [![Static Badge](https://img.shields.io/badge/Maschinenpistole40-%239469e3?style=for-the-badge)](https://afdian.com/a/deutsche)
 
 >[!WARNING]
 >Copyright (c) 2025 **Wild Era Developer Team**.
