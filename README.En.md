@@ -22,7 +22,7 @@ or use XXXXXXXX
 
 ## Support Us (Afdian)
 
-[![Static Badge](https://img.shields.io/badge/wed15-%239469e3?style=for-the-badge)](https://afdian.com/a/Minecraft-Mobius) [![Static Badge](https://img.shields.io/badge/luning39-%239469e3?style=for-the-badge)](https://afdian.com/a/luning39) [![Static Badge](https://img.shields.io/badge/Multidomain-%239469e3?style=for-the-badge)](https://afdian.com/a/Multidomain)
+[![Static Badge](https://img.shields.io/badge/wed15-%239469e3?style=for-the-badge)](https://afdian.com/a/Minecraft-Mobius) [![Static Badge](https://img.shields.io/badge/luning39-%239469e3?style=for-the-badge)](https://afdian.com/a/luning39) [![Static Badge](https://img.shields.io/badge/Multidomain-%239469e3?style=for-the-badge)](https://afdian.com/a/Multidomain) [![Static Badge](https://img.shields.io/badge/Maschinenpistole40-%239469e3?style=for-the-badge)](https://afdian.com/a/deutsche)
 
 >[!WARNING]
 >Copyright (c) 2025 **Wild Era Developer Team**.
