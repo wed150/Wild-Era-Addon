@@ -21,6 +21,19 @@
 打开本仓库的Release,找到对应版本下载
 或者使用XXXXXXX
 ```
+
+## 发电排行榜
+
+   <!-- RANKING_TABLE_START -->
+| 排名 | 用户名称 | 金额 |
+| --- | --- | --- |
+| 1 | bigamdsamll1605 | 50 |
+| 2 | 南青篱泽 | 10 |
+| 3 | 6772732898 | 10 |
+| 4 | 殇雪 | 7 |
+<!-- RANKING_TABLE_END -->
+
+
 ## 支持我们(爱发电)
 
 [![Static Badge](https://img.shields.io/badge/wed15-%239469e3?style=for-the-badge)](https://afdian.com/a/Minecraft-Mobius) [![Static Badge](https://img.shields.io/badge/luning39-%239469e3?style=for-the-badge)](https://afdian.com/a/luning39) [![Static Badge](https://img.shields.io/badge/Multidomain-%239469e3?style=for-the-badge)](https://afdian.com/a/Multidomain) [![Static Badge](https://img.shields.io/badge/Maschinenpistole40-%239469e3?style=for-the-badge)](https://afdian.com/a/deutsche)
