@@ -4,7 +4,7 @@
 ![中文](https://img.shields.io/badge/简体中文-inactive?style=for-the-badge&color=%235d8aa8)
 [![English](https://img.shields.io/badge/English-informational?style=for-the-badge)](README.En.md)
 
-[![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/wed150/Wild-Era-Addon/total?style=for-the-badge&labelColor=%23007ec6&label=下载&color=%234b9cd3)](https://github.com/wed150/Wild-Era-Addon/releases) [![GitHub forks](https://img.shields.io/github/forks/wed150/Wild-Era-Addon?style=for-the-badge&labelColor=%23007ec6&color=%234b9cd3)]() [![GitHub Repo stars](https://img.shields.io/github/stars/wed150/Wild-Era-Addon?style=for-the-badge&labelColor=%23007ec6&color=%234b9cd3&label=收藏)]() [![GitHub Release](https://img.shields.io/github/v/release/wed150/Wild-Era-Addon?include_prereleases&display_name=release&style=for-the-badge&labelColor=%23007ec6&color=%234b9cd3&label=最新版本)](https://github.com/wed150/Wild-Era-Addon/releases) [![Afdian Totatl Count](https://img.shields.io/badge/a-0-c?style=for-the-badge&label=爱发电&labelColor=%239469e3&color=%23B291F0)](https://afdian.com/a/Minecraft-Mobius)
+[![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/wed150/Wild-Era-Addon/total?style=for-the-badge&labelColor=%23007ec6&label=下载&color=%234b9cd3)](https://github.com/wed150/Wild-Era-Addon/releases) [![GitHub forks](https://img.shields.io/github/forks/wed150/Wild-Era-Addon?style=for-the-badge&labelColor=%23007ec6&color=%234b9cd3)]() [![GitHub Repo stars](https://img.shields.io/github/stars/wed150/Wild-Era-Addon?style=for-the-badge&labelColor=%23007ec6&color=%234b9cd3&label=收藏)]() [![GitHub Release](https://img.shields.io/github/v/release/wed150/Wild-Era-Addon?include_prereleases&display_name=release&style=for-the-badge&labelColor=%23007ec6&color=%234b9cd3&label=最新版本)](https://github.com/wed150/Wild-Era-Addon/releases) [![Afdian Totatl Count](https://img.shields.io/badge/a-8-c?style=for-the-badge&label=爱发电&labelColor=%239469e3&color=%23B291F0)](https://afdian.com/a/Minecraft-Mobius)
 
 
 
@@ -31,7 +31,11 @@
    <!-- RANKING_TABLE_START -->
 | 排名 | 用户名称 | 金额 |
 | --- | --- | --- |
-| 暂无数据 | 暂无数据 | 暂无数据 |
+| 1 | bigamdsamll1605 | 50 |
+| 2 | xkzs | 10 |
+| 3 | 南青篱泽 | 10 |
+| 4 | 6772732898 | 10 |
+| 5 | 殇雪 | 7 |
 <!-- RANKING_TABLE_END -->
 
 >[!WARNING]
